@@ -6,10 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <title>TailwindCss</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1> 
-</body>
+  <body class="font-poppins bg-black text-white">
+    <header class="py-6">
+      <div class="container mx-auto flex justify-between items-center px-8 md:px-14 lg:px-24 w-full">
+        <div class="text-lg font-bold">TailwindCss練習</div>
+        <div class="space-x-12 hidden md:flex items-center">
+            <a href="#home" class="hover:text-selected-text transition-all duration-300">ホーム</a>
+            <a href="#picture" class="hover:text-selected-text transition-all duration-300">写真</a>
+            <a href="#iine" class="hover:text-selected-text transition-all duration-300">いいね</a>
+            <a href="#contact"><button class="px-6 py-2 bg-theme font-bold rounded-lg hover:bg-purple-600 transition-all duration-300">問い合わせ</button></a>
+        </div>
+        <div class="md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
