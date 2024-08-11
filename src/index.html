@@ -14,11 +14,11 @@
   <body class="font-poppins bg-black text-white">
     <header class="py-6">
       <div class="container mx-auto flex justify-between items-center px-8 md:px-14 lg:px-24 w-full">
-        <div class="text-lg font-bold">TailwindCss練習</div>
+        <div class="text-lg font-bold">めん画</div>
         <div class="space-x-12 hidden md:flex items-center">
             <a href="#home" class="hover:text-selected-text transition-all duration-300">ホーム</a>
             <a href="#picture" class="hover:text-selected-text transition-all duration-300">写真</a>
-            <a href="#iine" class="hover:text-selected-text transition-all duration-300">いいね</a>
+            <a href="#features" class="hover:text-selected-text transition-all duration-300">機能一覧</a>
             <a href="#contact"><button class="px-6 py-2 bg-theme font-bold rounded-lg hover:bg-purple-600 transition-all duration-300">問い合わせ</button></a>
         </div>
         <div class="md:hidden">
@@ -26,5 +26,148 @@
         </div>
       </div>
     </header>
+    <div id="home" class="container mt-16 flex justify-between items-center mx-auto md:px-14 lg:px-24 w-full">
+      <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
+        <h1 class="font-bold text-5xl text-center md:text-left lg:text-7xl md:text-6xl">
+          美味しい<br />
+          ラーメンの画像を<br />
+          投稿しよう
+        </h1>
+        <div class="w-full flex justify-center md:justify-start">
+        </div>
+        <button class="px-8 py-4 bg-theme font-bold rounded-lg mt-10 hover:bg-purple-600 transition-all duration-300">
+          <i class="fa-solid fa-rocket mr-1"></i>
+          <span>もっと見る</span>
+        </button>
+      </div>
+      <div class="relative">
+        <img src="" alt="image" class="md:absolute lg:w-3/6 lg:top-2 lg:right-52 md:w-3/5 w-10/12 mt-12 md:mt-0 right-6 mx-auto -z-10" />
+      </div>
+    </div>
+    <div id="picture" class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <section class="w-full">
+        <h2 class="secondary-title">私のラーメン画像</h2>
+        <p class="section-paragraph">
+          私が今まで食べてきたラーメンがこちら
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          <img src="../src/images/.jpg" alt="" class="w-full bg-nav h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+          <img src="../src/images/.jpg" alt="" class="w-full bg-nav h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+          <img src="../src/images/.jpg" alt="" class="w-full bg-nav h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+          <img src="../src/images/.jpg" alt="" class="w-full bg-nav h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+          <img src="../src/images/.jpg" alt="" class="w-full bg-nav h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+          <img src="../src/images/.jpg" alt="" class="w-full bg-nav h-36 lg:h-72 object-cover rounded-md cursor-pointer"/>
+        </div>
+      </section>
+    </div>
+    <div
+      id="features"
+      class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+      <section class="w-full">
+        <h2 class="secondary-title">機能一覧</h2>
+        <div class="space-y-12 my-16">
+          <div
+            class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap hover:border-gray-400 transition-all duration-300 cursor-pointer"
+          >
+            <div class="mb-6 lg:mb-0 self-center">
+              <i class="fa-solid fa-camera text-7xl text-white"></i>
+            </div>
+            <div
+              class="flex flex-wrap justify-center text-center lg:text-left lg:block"
+            >
+              <h3 class="text-2xl font-semibold">他のユーザーの画麺投稿一覧</h3>
+              <div
+                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-1">
+                <div class="badge">未知なるラーメンを探そう</div>
+              </div>
+              <p class="text-secondary">
+                他のユーザーの画麺投稿一覧からラーメンを探そう
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-12 my-16">
+          <div
+            class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap hover:border-gray-400 transition-all duration-300 cursor-pointer"
+          >
+            <div class="mb-6 lg:mb-0 self-center">
+              <i class="fa-solid fa-heart text-7xl text-white"></i>
+            </div>
+            <div
+              class="flex flex-wrap justify-center text-center lg:text-left lg:block"
+            >
+              <h3 class="text-white text-3xl font-semibold">お気に入りのラーメン画像</h3>
+              <div
+                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-1"
+              >
+                <div class="badge">私のお気に入りの一杯</div>
+              </div>
+              <p class="text-secondary">
+                この前気になっていたラーメン食べに行こう
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      id="contact"
+      class="container mt-52 mb-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+      <section class="w-full">
+        <h2 class="secondary-title">お問い合わせ</h2>
+        <p class="section-paragraph">
+          管理者へ連絡
+        </p>
+
+        <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16">
+          <div class="space-y-12">
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold">お名前
+              </label>
+              <input
+                type="text"
+                class="w-full border border-inputBorder bg-input px-4 py-4"/>
+            </div>
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold">メールアドレス
+              </label>
+              <input
+                type="text"
+                class="w-full border border-inputBorder bg-input px-4 py-4"/>
+            </div>
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold">メッセージ
+              </label>
+              <input
+                type="text"
+                class="w-full border border-inputBorder bg-input px-4 py-4"/>
+            </div>
+            <button
+              class="px-8 py-3 bg-theme text-white font-bold rounded-md hover:bg-purple-600 transition-all duration-300">
+              送信する
+            </button>
+          </div>
+          <div class="mt-12">
+            <!-- contact info -->
+            <p class="text-secondary">000-1111-2222</p>
+            <a href="mailto:email@shincode.com">@gmail.com</a>
+            <!-- socials -->
+            <div class="flex mt-20 space-x-6">
+              <a href="#">
+                <i class="fa-brands fa-twitter text-3xl text-blue-400"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-facebook text-3xl text-blue-600"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram text-3xl text-pink-400"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
